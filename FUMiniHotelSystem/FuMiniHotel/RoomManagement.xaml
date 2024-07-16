@@ -1,0 +1,102 @@
+﻿<Window x:Class="FuMiniHotel.RoomManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FuMiniHotel"
+        mc:Ignorable="d"
+        Title="RoomManagement" Height="672" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel VerticalAlignment="Center" Margin="5,0,5,0" Grid.ColumnSpan="2">
+
+            <Grid  Background="LightBlue" Height="649">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="261*"/>
+                    <ColumnDefinition Width="134*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="Auto" />
+                    <RowDefinition  Height="Auto" />
+                    <RowDefinition  Height="180" />
+                    <RowDefinition  Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Left" Margin="0, 10, 0, 0" Grid.RowSpan="2">
+                    <Button x:Name="btnBookingReservation" Margin="10" Width="80" Content="Booking Reservation" Click="btnBookingReservation_Click" 
+                    />
+                    <Button x:Name="btnBooking" Margin="10" Width="80" Content="Booking" Click="btnBooking_Click" 
+                    />
+                    <Button x:Name="btnMember" Margin="10" Width="80" Content="Customer" Click="btnMember_Click" 
+                    />
+                    <Button x:Name="btnLogOut" Margin="10" Width="80" Content="LogOut" Click="btnLogOut_Click" 
+                    />
+                </StackPanel>
+                <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Left" Width="500" Grid.ColumnSpan="2" Margin="145,0,0,0">
+
+
+                    <Label Name="lbTitle" Foreground="Red" FontWeight="DemiBold"
+                           FontSize="20" Content="Room Manager"/>
+
+                    <Label Name="lbId" Content="RoomId"></Label>
+                    <TextBox Name="txtID" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=RoomID, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}"/>
+
+                    <Label Name="lbFullname" Content="Room Number"></Label>
+                    <TextBox Name="txtRomNumber" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=RoomNumber, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}"/>
+
+                    <Label Name="lbEmail" Content="Room Description"></Label>
+                    <TextBox Name="txtDescription" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=Description, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}"/>
+
+                    <Label Name="lbTelephone" Content="Room Max Capacity"></Label>
+                    <TextBox Name="txtMaxCapacity" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=MaxCapacity, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}"/>
+
+                    <Label Name="lbRoomType" Content="Room Type"></Label>
+                    <ComboBox Name="ComboBoxRoomType" SelectionChanged="ComboBoxRoomType_SelectionChanged"  >
+                        <ComboBoxItem Content="1"></ComboBoxItem>
+                    </ComboBox>
+
+                    <Label Name="lbPassword" Content="RoomPricePerDay"></Label>
+                    <TextBox Name="txtPricePerDay" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=PricePerDay, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="195,342,0,0" Grid.RowSpan="2">
+                    <Button x:Name="btnInsert" Margin="10" Width="80" Content="Insert" Click="btnInsert_Click"/>
+                    <Button x:Name="btnUpdate" Margin="10" Width="80" Content="Update" Click="btnUpdate_Click"/>
+                    
+                </StackPanel>
+
+
+                <ListView Grid.Row="1" Name="lvMembers" Width="Auto" Height="Auto" Grid.ColumnSpan="2" Margin="0,40,0,0" Grid.RowSpan="2" SelectionChanged="lvMembers_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="RoomId" Width="150" DisplayMemberBinding="{Binding Path=RoomId}"/>
+                            <GridViewColumn Header="Room Number" Width="150" DisplayMemberBinding="{Binding Path=RoomNumber}"/>
+                            <GridViewColumn Header="Room Description" Width="150" DisplayMemberBinding="{Binding Path=RoomDescription}"/>
+                            <GridViewColumn Header="Room Max Capacity" Width="150" DisplayMemberBinding="{Binding Path=RoomMacCapacity}"/>
+                            <GridViewColumn Header="Room Type" Width="150" DisplayMemberBinding="{Binding Path=RoomType}"/>
+                            <GridViewColumn Header="Room Price Per Day" Width="100" DisplayMemberBinding="{Binding Path=RoomPricePerDay}"/>
+                        </GridView>
+                    </ListView.View>
+
+                </ListView>
+
+                <!--<Button Grid.Row="3" x:Name="btnClose" Margin="10" HorizontalAlignment="Right"
+                        Width="80" VerticalAlignment="Bottom" Content="Close" Click="btnClose_Click"/>-->
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

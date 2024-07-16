@@ -1,0 +1,80 @@
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\appsettings.json
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Support\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\appsettings.json
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Code\SP\FuHotelSystem\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\Code\SP\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\appsettings.json
+D:\Code\SP\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Code\SP\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Code\SP\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Code\SP\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\Code\SP\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Code\SP\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\Admin\Downloads\FUMiniHotelSystem (1)\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\appsettings.json
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Ky_7\PRN221\Lap\Lap1\Assignment_01\FUMiniHotelSystem\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

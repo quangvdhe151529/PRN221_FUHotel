@@ -1,0 +1,83 @@
+﻿<Window x:Class="FuMiniHotel.ListBookingMng"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FuMiniHotel"
+        mc:Ignorable="d"
+        Title="ListBookingMng" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel VerticalAlignment="Center" Margin="5,0,5,0" Grid.ColumnSpan="2">
+
+            <Grid  Background="LightBlue" Width="794">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="261*"/>
+                    <ColumnDefinition Width="134*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="Auto" MinHeight="299.44" />
+                    <RowDefinition  Height="Auto" MinHeight="215.96" />
+                    <RowDefinition  Height="262.52" />
+                    <RowDefinition  Height="0*" />
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Left" Margin="0,10,0,4" Width="100">
+                    <Button x:Name="btnBooking" Margin="10" Width="80" Content="Booking" Click="btnBooking_Click" 
+                    />
+                    <Button x:Name="btnRoom" Margin="10" Width="80" Content="Room" Click="btnRoom_Click" 
+                    />
+                    <Button x:Name="btnCustomer" Margin="10" Width="80" Content="Customer" Click="btnCustomer_Click" 
+                    />
+                    <Button x:Name="btnLogOut" Margin="10" Width="80" Content="LogOut" Click="btnLogOut_Click" 
+                    />
+                </StackPanel>
+                <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Left" Width="506" Grid.ColumnSpan="2" Margin="145,0,0,59">
+
+                    <Label Name="lbTitle" Foreground="Red" FontWeight="DemiBold"
+                           FontSize="20" Content="Booking Reservation Manager"/>
+
+                    <Label Name="lbId" Content="BookingResercationId"></Label>
+                    <TextBox Name="txtId" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=BookingReservationId, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}"/>
+
+                    <Label Name="lbFullname" Content="Customer Name"></Label>
+                    <TextBox Name="txtFullname" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=CustomerFullName, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}"/>
+
+                    <Label Name="BookingDate" Content="Booking Date"></Label>
+                    <TextBox Name="txtBookingDate" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=BookingDate, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}"/>
+
+                    <Label Name="lbTelephone" Content="Total Price"></Label>
+                    <TextBox Name="txtTelephone" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=TotalPrice, Mode=OneWay}"
+                             DataContext="{Binding  ElementName=lvMembers,Path=SelectedItem}"/>
+
+                </StackPanel>
+
+                <ListView Name="lvMembers" Width="Auto" Height="Auto" Grid.ColumnSpan="2" Margin="0,280,0,0" Grid.RowSpan="4">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="BookingResercationId" Width="150" DisplayMemberBinding="{Binding Path=BookingReservationId}"/>
+                            <GridViewColumn Header="Customer Name" Width="150" DisplayMemberBinding="{Binding Path=CustomerFullName}"/>
+                            <GridViewColumn Header="Booking Date" Width="150" DisplayMemberBinding="{Binding Path=BookingDate}"/>
+                            <GridViewColumn Header="Total Price" Width="150" DisplayMemberBinding="{Binding Path=TotalPrice}"/>
+                        </GridView>
+                    </ListView.View>
+
+                </ListView>
+
+                <!--<Button Grid.Row="3" x:Name="btnClose" Margin="10" HorizontalAlignment="Right"
+                        Width="80" VerticalAlignment="Bottom" Content="Close" Click="btnClose_Click"/>-->
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>
