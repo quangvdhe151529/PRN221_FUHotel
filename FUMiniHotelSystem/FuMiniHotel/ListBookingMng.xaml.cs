@@ -31,16 +31,54 @@ namespace FuMiniHotel
 
         public void LoadBookingList()
         {
+            //using (var context = new PRN212_SU24_AS1Context())
+            //{
+            //    lvMembers.ItemsSource = context.BookingReservations.Join(context.Customers, 
+            //        b => b.CustomerId, c => c.CustomerId, (b, c) => new { b, c })
+            //        .GroupJoin(context.BookingDetails, bc => bc.b.BookingReservationId, 
+            //        bd => bd.BookingReservationId, (bc, bds) => new
+            //    {
+            //      CustomerFullName = bc.c.CustomerFullName,
+            //        BookingReservationId = bc.b.BookingReservationId,
+            //        BookingDate = bc.b.BookingDate,
+            //        TotalPrice = bc.b.TotalPrice,
+            //        NumberOfRoomsBooked = bds.Count()
+            //    }).ToList();
+
+            //}
             using (var context = new PRN212_SU24_AS1Context())
             {
-                lvMembers.ItemsSource = context.BookingReservations.Join(context.Customers, b => b.CustomerId, c => c.CustomerId, (b, c) => new
-                {
-                  CustomerFullName = c.CustomerFullName,
-                    BookingReservationId = b.BookingReservationId,
-                    BookingDate = b.BookingDate,
-                    TotalPrice = b.TotalPrice
-                }).ToList();
+                var bookings = context.BookingReservations
+                    .Join(context.Customers, b => b.CustomerId, c => c.CustomerId, (b, c) => new
+                    {
+                        b.BookingReservationId,
+                        b.CustomerId,
+                        b.BookingDate,
+                        b.TotalPrice,
+                        c.CustomerFullName
+                    })
+                    .ToList();
 
+                var bookingDetails = context.BookingDetails
+                    .GroupBy(bd => bd.BookingReservationId)
+                    .Select(g => new { BookingReservationId = g.Key, Count = g.Count() })
+                    .ToDictionary(x => x.BookingReservationId, x => x.Count);
+
+                var result = bookings
+                    .Where(b => b.BookingDate.HasValue)  // Lọc bỏ các đặt phòng không có ngày
+                    .GroupBy(b => new { b.CustomerId, BookingDate = b.BookingDate.Value.Date, b.CustomerFullName })
+                    .Select(g => new
+                    {
+                        g.Key.CustomerFullName,
+                        BookingReservationId = g.First().BookingReservationId,
+                        g.Key.BookingDate,
+                        TotalPrice = g.Sum(b => b.TotalPrice),
+                        NumberOfRoomsBooked = g.Sum(b =>
+                            bookingDetails.ContainsKey(b.BookingReservationId) ? bookingDetails[b.BookingReservationId] : 0)
+                    })
+                    .ToList();
+
+                lvMembers.ItemsSource = result;
             }
         }
 

@@ -30,6 +30,8 @@
                     />
                     <Button x:Name="btnRoom" Margin="10" Width="80" Content="Room" Click="btnRoom_Click" 
                     />
+                    <Button x:Name="btnBooking" Margin="10" Width="80" Content="Booking" Click="btnBooking_Click" 
+/>
                     <!--<Button x:Name="btnRoomTyp" Margin="10" Width="80" Content="RoomType" 
                     />-->
                     <Button x:Name="btnLogOut" Margin="10" Width="80" Content="LogOut" Click="btnLogOut_Click" 

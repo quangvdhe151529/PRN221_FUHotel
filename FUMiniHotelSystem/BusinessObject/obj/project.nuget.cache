@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z+4KS2t4Lts=",
+  "dgSpecHash": "eVNkhxVP8Cs=",
   "success": true,
-  "projectFilePath": "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj",
+  "projectFilePath": "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\quang\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\quang\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\DataAccess\\DataAccess.csproj": {}
+    "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj",
+        "projectPath": "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj",
         "packagesPath": "C:\\Users\\quang\\.nuget\\packages\\",
-        "outputPath": "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\BusinessObject\\obj\\",
+        "outputPath": "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\quang\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,14 +85,14 @@
         }
       }
     },
-    "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\DataAccess\\DataAccess.csproj": {
+    "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\DataAccess\\DataAccess.csproj",
+        "projectPath": "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\quang\\.nuget\\packages\\",
-        "outputPath": "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\DataAccess\\obj\\",
+        "outputPath": "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\quang\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,8 +110,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "D:\\Quang\\Study\\PRN221\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj"
+              "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "D:\\Program\\github\\PRN221_FUHotel\\FUMiniHotelSystem\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }

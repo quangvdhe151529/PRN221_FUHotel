@@ -38,25 +38,32 @@ namespace FuMiniHotel
             }
             ComboBoxRoomType.SelectedIndex = 0;
 
-            using (var context = new PRN212_SU24_AS1Context())
-            {
-                var ltCustomEmail = context.Customers.ToList();
-                if (ltCustomEmail != null)
-                {
-                    ComboBoxCustomerEmail.Items.Clear();
-                    foreach (Customer customer in ltCustomEmail)
-                    {
-                        ComboBoxCustomerEmail.Items.Add(customer);
-                        ComboBoxCustomerEmail.DisplayMemberPath = "EmailAddress";
-                    }
-                    ComboBoxCustomerEmail.SelectedIndex = 0;
-                }
-            }
+            //using (var context = new PRN212_SU24_AS1Context())
+            //{
+            //    var ltCustomEmail = context.Customers.ToList();
+            //    if (ltCustomEmail != null)
+            //    {
+            //        ComboBoxCustomerEmail.Items.Clear();
+            //        foreach (Customer customer in ltCustomEmail)
+            //        {
+            //            ComboBoxCustomerEmail.Items.Add(customer);
+            //            ComboBoxCustomerEmail.DisplayMemberPath = "EmailAddress";
+            //        }
+            //        ComboBoxCustomerEmail.SelectedIndex = 0;
+            //    }
+            //}
+
 
             GetData();
             SetEnableSelect(false);
         }
-
+        private Customer SearchCustomerByEmail(string email)
+        {
+            using (var context = new PRN212_SU24_AS1Context())
+            {
+                return context.Customers.FirstOrDefault(c => c.EmailAddress == email);
+            }
+        }
         private void GetData()
         {
             double total = 0;
@@ -129,7 +136,13 @@ namespace FuMiniHotel
                     return;
                 }
 
-                var email = ComboBoxCustomerEmail.SelectedItem;
+                //var email = ComboBoxCustomerEmail.SelectedItem;
+                //if (email == null)
+                //{
+                //    MessageBox.Show("Email customer can't be empty");
+                //    return;
+                //}
+                var email = txtSearchEmailCustomer.Text;
                 if (email == null)
                 {
                     MessageBox.Show("Email customer can't be empty");
@@ -174,12 +187,24 @@ namespace FuMiniHotel
 
         }
 
-
+            private bool CheckEmailExists(string email)
+            {
+                using (var context = new PRN212_SU24_AS1Context())
+                {
+                    return context.Customers.Any(c => c.EmailAddress == email);
+                }
+            }
         private void btnBooking_Click(object sender, RoutedEventArgs e)
         {
             try
             {
+                string email = txtSearchEmailCustomer.Text;
 
+                if (!CheckEmailExists(email))
+                {
+                    MessageBox.Show("Email này không tồn tại trong cơ sở dữ liệu.");
+                    return;
+                }
                 RoomType roomType = (RoomType)ComboBoxRoomType.SelectedItem;
                 if (roomType == null)
                 {
@@ -206,13 +231,18 @@ namespace FuMiniHotel
                     return;
                 }
 
-                Customer customer = (Customer)ComboBoxCustomerEmail.SelectedItem;
+                //Customer customer = (Customer)ComboBoxCustomerEmail.SelectedItem;
+                //if (customer == null)
+                //{
+                //    MessageBox.Show("Email customer can't be empty");
+                //    return;
+                //}
+                Customer customer = SearchCustomerByEmail(email);
                 if (customer == null)
-                {
-                    MessageBox.Show("Email customer can't be empty");
-                    return;
-                }
-
+                    {
+                        MessageBox.Show("Email customer can't be empty");
+                        return;
+                    }
                 DateTime _dateStart = DateTime.Parse(dateStart);
                 DateTime _dateEnd = DateTime.Parse(dateEnd);
 

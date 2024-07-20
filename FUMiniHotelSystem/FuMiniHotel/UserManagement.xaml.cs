@@ -167,5 +167,11 @@ namespace FuMiniHotel
             this.Close();
             lstBooking.LoadBookingList();
         }
+        private void btnBooking_Click(object sender, RoutedEventArgs e)
+        {
+            var booking = new BookingWindow();
+            booking.Show();
+            this.Close();
+        }
     }
 }

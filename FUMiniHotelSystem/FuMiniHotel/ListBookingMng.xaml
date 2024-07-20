@@ -69,7 +69,9 @@
                             <GridViewColumn Header="BookingResercationId" Width="150" DisplayMemberBinding="{Binding Path=BookingReservationId}"/>
                             <GridViewColumn Header="Customer Name" Width="150" DisplayMemberBinding="{Binding Path=CustomerFullName}"/>
                             <GridViewColumn Header="Booking Date" Width="150" DisplayMemberBinding="{Binding Path=BookingDate}"/>
+                            <GridViewColumn Header="NumberOfRoomsBooked" Width="150" DisplayMemberBinding="{Binding Path=NumberOfRoomsBooked}"/>
                             <GridViewColumn Header="Total Price" Width="150" DisplayMemberBinding="{Binding Path=TotalPrice}"/>
+                            
                         </GridView>
                     </ListView.View>
 

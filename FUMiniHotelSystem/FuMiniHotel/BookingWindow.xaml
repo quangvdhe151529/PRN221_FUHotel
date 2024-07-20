@@ -35,10 +35,10 @@
                     />
                     <Button x:Name="btnRoom" Margin="10" Width="80" Content="Room" Click="btnRoom_Click" 
                     />
-                    <Button x:Name="btnLogOut" Margin="10" Width="80" Content="LogOut" Click="btnLogOut_Click"
-                    />
                     <Button x:Name="btnHistoryBooking" Margin="10" Width="80" Content="HistoryBooking" Click="btnListBooking_Click"
                     />
+                    <Button x:Name="btnLogOut" Margin="10" Width="80" Content="LogOut" Click="btnLogOut_Click"
+/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
                             HorizontalAlignment="Center" Width="500" Grid.RowSpan="5" Margin="0,0,0,180">
@@ -70,12 +70,17 @@
                     <TextBox Name="txtPrice" HorizontalAlignment="Stretch"
                              Height="25" Text="{Binding Path=Price, Mode=OneWay}"
                              DataContext="{Binding SelectedItem, ElementName=lvBooking}"/>
+                    <Label Name="lbSearchEmail" Content="Search Email Customer"></Label>
+                    <TextBox Name="txtSearchEmailCustomer" HorizontalAlignment="Stretch"
+                             Height="25" Text="{Binding Path=Searchemailcustomer,Mode=OneWay}"
+                             DataContext="{Binding SelectedItem, ElementName=lvBooking}"/>
+
 
                 </StackPanel>
 
                 <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,88,0,180" Grid.RowSpan="3">
-                    <Button x:Name="btnAdd" Margin="10" Width="80" Content="Add" Click="btnBooking_Click"/>
-                    <Button x:Name="btnUpdate" Margin="10" Width="80" Content="Update" Click="btnDelete_Click" Height="21"/>
+                    <!--<Button x:Name="btnAdd" Margin="10" Width="80" Content="Add" Click="btnBooking_Click"/>-->
+                    <!--<Button x:Name="btnUpdate" Margin="10" Width="80" Content="Update" Click="btnDelete_Click" Height="21"/>-->
                     <!--<Button x:Name="btnUpdate" Margin="10" Width="80" Content="Update" Click="btnUpdate_Click"/>-->
                     <!--<Button x:Name="btnSearch" Margin="10" Width="80" Content="Seach" Click="btnSearch_Click"/>-->
                 </StackPanel>
@@ -102,10 +107,12 @@
                            FontSize="20" Content="Total Price: 0" Margin="0,125,0,6"/>
                 <Button Grid.Row="5" x:Name="btnClose" Margin="0,137,16,49" HorizontalAlignment="Right"
                         Width="80" Content="Close" Click="btnClose_Click" RenderTransformOrigin="0.154,3.127"/>
-                <ComboBox x:Name="ComboBoxCustomerEmail" HorizontalAlignment="Left" Margin="137,97,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Grid.RowSpan="3" RenderTransformOrigin="0.123,1.009"/>
+                <!--<ComboBox x:Name="ComboBoxCustomerEmail" HorizontalAlignment="Left" Margin="12,65,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.123,1.009"/>-->
                 <Button x:Name="btnSubmit" Content="Booking" HorizontalAlignment="Left" Margin="589,137,0,0" Grid.Row="5" VerticalAlignment="Top" Height="20" Width="75" Click="btnSubmit_Click"/>
-                <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="594,97,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.RowSpan="3" Width="62" Height="22" Click="btnClear_Click"/>
-                <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="503,97,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.RowSpan="3" Width="59" Height="22" Click="btnDelete_Click_1"/>
+                <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="665,60,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="27" Click="btnClear_Click"/>
+                <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="665,19,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="28" Click="btnDelete_Click_1" RenderTransformOrigin="0.007,5.596"/>
+                <Button x:Name="btnAdd" Margin="665,112,34,21" Content="Add" Click="btnBooking_Click" Grid.Row="1"/>
+                <Button x:Name="btnUpdate" Margin="665,72,34,62" Content="Update" Click="btnDelete_Click" Grid.Row="1"/>
             </Grid>
         </DockPanel>
 
